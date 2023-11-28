@@ -1,11 +1,14 @@
 <script lang="ts" setup>
 import type { Products } from '~/types/products';
+
+definePageMeta({
+  middleware: ["user-access"]
+});
+
 const products = ref<Products[]>([]);
 const totalPrice = computed(() => {
-  return products.value.filter((product) => product.price !==
-undefined).reduce((accumulator, currentValue) => accumulator + 
-currentValue.price!, 0);
-})
+  return products.value.filter((product) => product.price !== undefined).reduce((accumulator, currentValue) => accumulator + currentValue.price!, 0);
+});
 
 onMounted(() => {
   let localStorageData = localStorage.getItem("products");
@@ -59,7 +62,7 @@ const removeCart = (id: number) => {
                   <span class="text-base">Total</span>
                   <span class="text-base font-bold">${{ totalPrice }}</span>
              </div>
-             <button class="bg-blue-600 text-white text-base font-bold w-full py-2
+             <button class="bg-green-600 text-white text-base font-bold w-full py-2
              rounded-lg">Checkout</button>
         </div>
       </div>
