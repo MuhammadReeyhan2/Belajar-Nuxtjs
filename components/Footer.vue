@@ -3,8 +3,7 @@
        <div class="mx-auto justify-start items-start flex-wrap w-full mt-32 max-w-screen-xl p-4 py-6 lg:py-8">
            <div class="md:flex md:justify-between">
              <div class="mb-6 md:mb-0">
-                <a href="images/Home/logo.png/" class="flex items-center">
-                <img src="images/Home/logo.png" class="h-8" alt="ecomerce Logo" />
+                <a href="https://flowbite.com/" class="flex items-center">
                      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Mini Shop</span>
                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
                          <li class="mb-4"><br>
