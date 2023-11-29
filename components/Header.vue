@@ -27,13 +27,10 @@ const logout = async () => {
         <div class="container">
             <div class="flex justify-between items-center">
                 <div>
-                  <a href="images/Home/logo.png/" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
-                    <img src="images/Home/logo.png" class="h-8" alt="ecomerce Logo" />
-                  <NuxtLink to="/" class="text-xl font-bold">MiniShop</NuxtLink>
-                  </a>
+                  <NuxtLink to="/" class="text-xl font-bold"><span style="color: #f9532d">MiniShop</span></NuxtLink>
                 </div>
                 <nav class="flex items-center gap-6">
-                    <NuxtLink to="/" class="text-base"><span style="color:#f9532d">Home</span></NuxtLink>
+                    <NuxtLink to="/" class="text-base">Home</NuxtLink>
                     <NuxtLink to="/product" class="text-base">Products</NuxtLink>
                     <NuxtLink to="/cart" class="text-base">Cart</NuxtLink>
                     <NuxtLink v-if="!isAuthenticated" to="/login" class="text-base bg-blue-600 px-6 py-2 text-white rounded-lg hover:bg-blue-600/80">Login</NuxtLink>
