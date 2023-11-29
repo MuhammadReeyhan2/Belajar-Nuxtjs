@@ -3,7 +3,7 @@
        <div class="mx-auto justify-start items-start flex-wrap w-full mt-32 max-w-screen-xl p-4 py-6 lg:py-8">
            <div class="md:flex md:justify-between">
              <div class="mb-6 md:mb-0">
-                <a href="images/Home/logo.png/" class="flex items-center mb-3 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                <a href="images/Home/logo.png/" class="flex items-center">
                 <img src="images/Home/logo.png" class="h-8" alt="ecomerce Logo" />
                      <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Mini Shop</span>
                      <ul class="text-gray-500 dark:text-gray-400 font-medium">
@@ -60,7 +60,7 @@
          </div>
          <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
          <div class="sm:flex sm:items-center sm:justify-center">
-             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 MiniShop.All Rights Reserved.
+             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 MiniShop All Rights Reserved.
              </span>
          </div>
        </div>
