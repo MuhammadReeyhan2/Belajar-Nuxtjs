@@ -7,7 +7,7 @@ export const useStorageStore = defineStore("storage", {
   actions: {
     async uploadFile(pathname: string, file: any){
       const { storageUrl, apikey, secretKey } = useAppConfig();
-      const {data, error} = await useFetch(`/object/products/${pathname}`, {
+      const {data, error} = await useFetch(`/object/products?select=*/${pathname}`, {
         baseURL: storageUrl,
         method: "POST",
         headers: {
