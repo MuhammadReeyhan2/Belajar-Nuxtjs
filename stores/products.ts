@@ -7,7 +7,7 @@ export const useProductsStore = defineStore("products", {
   actions: {
     async createProduct(payload: any){
     const { baseUrl, apikey } = useAppConfig();
-    const {data, error} = await useFetch("/rest/v1/products",{
+    const {data, error} = await useFetch("/rest/v1/products?select=*",{
       baseURL: baseUrl,
       method: "POST",
       headers: {
@@ -27,7 +27,7 @@ export const useProductsStore = defineStore("products", {
 
     async getAllProducts(){
     const { baseUrl, apikey } = useAppConfig();
-    const {data, error} = await useFetch("/rest/v1/products?select=*", {
+    const {data, error} = await useFetch("/rest/v1/products", {
       baseURL: baseUrl,
       method: "GET",
       headers: {
