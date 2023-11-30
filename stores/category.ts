@@ -7,7 +7,7 @@ export const useCategoryStore = defineStore("category", {
   actions: {
     async getAllCategory(){
       const { baseUrl, apikey } = useAppConfig();
-      const {data, error} = await useFetch("/rest/v1/categories?select=*", {
+      const {data, error} = await useFetch("/rest/v1/categories ?select=*", {
         baseURL: baseUrl,
         method: "GET",
         headers: {
